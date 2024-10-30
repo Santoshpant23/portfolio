@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santosh's GitHub Portfolio</title>
+    <script defer src="script.js"></script> <!-- Ensure the script loads after the DOM -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar" id="navbar">
+        <div class="brand">Santosh's Hub</div>
+        <nav class="navlinks">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li>
+                <li><a href="#socials">Socials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Full-Screen Homepage with Background Animation -->
+    <section class="home" id="home">
+        <div class="animation-background">
+            <div class="animation-commands"></div>
+        </div>
+        <div class="intro">
+            <h1>Hello, I'm Santosh 👋</h1>
+            <p>Computer Science major and coding enthusiast with a love for problem-solving.</p>
+            <div class="buttons">
+                <button onclick="downloadResume()">Download Resume</button>
+                <button onclick="window.location.href='https://linkedin.com/in/santosh'">LinkedIn</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Computer Science major at Knox College, passionate about technology and problem-solving. With experience in both frontend and backend development, I enjoy creating projects that are not only functional but also impactful.
+            <br><br>
+            Previously, I interned at Synapse Technologies, where I developed a stock market analysis application using Go and React. I’ve also worked on <strong>KnoxClubSharing</strong>, a resource-sharing platform, and other projects like <strong>Multiplayer Chess</strong> and <strong>MatchUp</strong>.
+        </p>
+    </section>
+
+    <!-- Projects Section with Central Line and Sub-Branches -->
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-branches">
+            <div class="main-line"></div>
+            <div class="project left">
+                <h3>KnoxClubSharing</h3>
+                <p>A web platform for college clubs to share resources, encouraging sustainability.</p>
+                <a href="https://github.com/Santoshpant23/KnoxClubSharing" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project right">
+                <h3>Multiplayer Chess</h3>
+                <p>A real-time chess game with seamless multiplayer support and move validation.</p>
+                <a href="https://github.com/Santoshpant23/chess-multiplayer" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project left">
+                <h3>MatchUp</h3>
+                <p>An app for connecting gamers based on shared interests and live chat features.</p>
+                <a href="https://github.com/ridham-dd/OnlineDatingWebpage" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project right">
+                <h3>Photoshop Junior</h3>
+                <p>A desktop photo editing app with features like resizing, rotation, and image filters.</p>
+                <a href="https://github.com/Santoshpant23/Photoshop-Junior" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project left">
+                <h3>Date Converter</h3>
+                <p>A mobile app for converting dates between Nepali and Gregorian calendars.</p>
+                <a href="https://github.com/Santoshpant23/dateConverter" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack with Logos -->
+    <section class="tech-stack" id="tech-stack">
+        <h2>Tech Stack</h2>
+        <div class="badge-container">
+            <div class="badge"><img src="logos/java-logo.png" alt="Java">Java</div>
+            <div class="badge"><img src="logos/js-logo.png" alt="JavaScript">JavaScript</div>
+            <div class="badge"><img src="logos/ts-logo.png" alt="TypeScript">TypeScript</div>
+            <div class="badge"><img src="logos/react-logo.png" alt="React">React</div>
+            <div class="badge"><img src="logos/node-logo.png" alt="Node.js">Node.js</div>
+            <div class="badge"><img src="logos/aws-logo.png" alt="AWS">AWS</div>
+            <div class="badge"><img src="logos/docker-logo.png" alt="Docker">Docker</div>
+        </div>
+    </section>
+
+    <!-- Socials with Icons -->
+    <section class="socials" id="socials">
+        <h2>Connect with Me</h2>
+        <ul>
+            <li><a href="https://github.com/Santoshpant23"><img src="icons/github-icon.png" alt="GitHub">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/santosh-pant-643213183"><img src="icons/linkedin-icon.png" alt="LinkedIn">LinkedIn</a></li>
+            <li><a href="https://twitter.com/santosh"><img src="icons/twitter-icon.png" alt="Twitter">Twitter</a></li>
+            <li><a href="https://leetcode.com/santosh"><img src="icons/leetcode-icon.png" alt="LeetCode">LeetCode</a></li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <p>Crafted with 💻 by Santosh</p>
+    </footer>
+</body>
+</html>
