@@ -1,7 +1,4 @@
-// Function to handle resume download
-function downloadResume() {
-    window.location.href = 'Resume_24.pdf'; // Ensure this path is correct
-}
+
 
 // Background Animation Text Commands
 const commands = ["git init", "git clone", "git add .", "git commit -m 'Hello World!'", "git push origin main"];
@@ -24,4 +21,4 @@ function displayCommands() {
 }
 
 // Run the command display every few seconds
-setInterval(displayCommands, 50000);
+setInterval(displayCommands, 5000);

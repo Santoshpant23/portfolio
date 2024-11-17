@@ -55,8 +55,10 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    /* z-index: -1; */
+    z-index: 0; /* Place it behind the .intro content */
+    background: rgba(13, 17, 23, 0.9); /* Optional, to make animations stand out */
 }
+
 
 .animation-commands {
     display: flex;
@@ -65,14 +67,21 @@ body, html {
     justify-content: center;
     height: 100%;
     color: #58a6ff;
-    opacity: 0.1;
     font-size: 2em;
     animation: scrollText 20s linear infinite;
+    z-index: 0; /* Ensure it's within the background */
 }
 
 @keyframes scrollText {
     0% { transform: translateY(100%); }
     100% { transform: translateY(-100%); }
+}
+
+.intro {
+    position: relative; /* Ensure it stacks above the background */
+    z-index: 1; /* Place it above .animation-background */
+    background: transparent; /* Avoid opacity conflicts */
+    padding: 20px; /* Optional, to create some space */
 }
 
 .intro h1 {
@@ -175,6 +184,20 @@ h2 {
     font-size: 0.9em;
 }
 
+.badge-socials {
+    display: flex;
+    align-items: center;
+    background-color: #30363d;
+    color: #c9d1d9;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.badge-socials a img {
+    width: 100px;
+    margin-right: 8px;
+}
 .badge img {
     width: 20px;
     margin-right: 8px;
@@ -226,118 +249,4 @@ h2 {
     }
 }
 
-/* General Styling */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto Mono', monospace;
-    background-color: #0d1117;
-    color: #c9d1d9;
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #161b22;
-    padding: 10px 20px;
-    color: white;
-}
-
-.brand {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #58a6ff;
-}
-
-/* Full-Screen Home Section with Background Animation */
-.home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-
-.animation-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* z-index: -1; */
-}
-
-.animation-commands {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    color: #58a6ff;
-    opacity: 0.1;
-    font-size: 2em;
-    animation: scrollText 20s linear infinite;
-}
-
-/* Projects Section with Center Line and Sub-Branches */
-.project-branches {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.main-line {
-    background-color: #58a6ff;
-    width: 4px;
-    position: absolute;
-    height: 100%;
-    left: 50%;
-    top: 0;
-}
-
-.project {
-    background-color: #161b22;
-    padding: 15px;
-    border-radius: 8px;
-    width: 40%;
-    margin: 20px;
-    text-align: left;
-}
-
-.project.left {
-    transform: translateX(-50%);
-}
-
-.project.right {
-    transform: translateX(50%);
-}
-
-/* Tech Stack Badges with Logos */
-.badge-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.badge {
-    display: flex;
-    align-items: center;
-    background-color: #30363d;
-    color: #c9d1d9;
-    padding: 5px 10px;
-    border-radius: 20px;
-}
-
-.badge img {
-    width: 20px;
-    margin-right: 8px;
-}
 
